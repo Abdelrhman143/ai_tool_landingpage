@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>هويّة — منصة تحسين محركات البحث بالذكاء الاصطناعي</title>
+    <meta
+      name="description"
+      content="هويّة منصة ذكية تفحص موقعك تلقائياً، تكتشف مشاكل SEO، وتولّد تحسينات بالذكاء الاصطناعي تطبّقها على موقعك بنقرة واحدة."
+    />
+
+    <!-- Cairo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#a0cd39",
+                50: "#f5faea",
+                100: "#e9f3cf",
+                200: "#d6e9a4",
+                300: "#bedc6f",
+                400: "#a0cd39",
+                500: "#8ab72e",
+                600: "#759c25",
+                700: "#5c7a20",
+                800: "#4a6120",
+                900: "#3f521f",
+              },
+              ink: "#131a14",
+            },
+            fontFamily: {
+              cairo: ['"Cairo"', "sans-serif"],
+            },
+            borderRadius: {
+              "2.5xl": "1.25rem",
+              "4xl": "2rem",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/webp" href="assets/logo.webp" />
+  </head>
+
+  <body class="font-cairo antialiased">
+    <!-- ===================================================================
+         HEADER / NAVIGATION
+    ==================================================================== -->
+    <header
+      id="site-header"
+      class="site-header fixed top-0 inset-x-0 z-50"
+    >
+      <div
+        class="mx-auto max-w-7xl px-5 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Logo (right in RTL) -->
+        <a href="#hero" class="flex items-center shrink-0">
+          <img src="assets/logo.webp" alt="هويّة" class="h-10 w-auto" />
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#about" class="nav-link text-[15px]">من نحن</a>
+          <a href="#usecases" class="nav-link text-[15px]">استخدامات الأداة</a>
+          <a href="#stats" class="nav-link text-[15px]">الأرقام والإحصائيات</a>
+          <a href="#pricing" class="nav-link text-[15px]">الأسعار</a>
+          <a href="#testimonials" class="nav-link text-[15px]">آراء العملاء</a>
+          <a href="#faq" class="nav-link text-[15px]">الأسئلة الشائعة</a>
+        </nav>
+
+        <!-- CTA + mobile toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#pricing" class="btn btn-primary px-6 py-3 hidden sm:inline-flex"
+            >ابدأ الآن</a
+          >
+          <button
+            id="menu-toggle"
+            aria-label="القائمة"
+            class="lg:hidden w-11 h-11 rounded-full border border-[#ecefe7] bg-white flex items-center justify-center"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-[#ecefe7]">
+        <nav class="px-5 py-4 flex flex-col gap-1">
+          <a href="#about" class="py-3 text-ink/80 font-semibold">من نحن</a>
+          <a href="#usecases" class="py-3 text-ink/80 font-semibold">استخدامات الأداة</a>
+          <a href="#stats" class="py-3 text-ink/80 font-semibold">الأرقام والإحصائيات</a>
+          <a href="#pricing" class="py-3 text-ink/80 font-semibold">الأسعار</a>
+          <a href="#testimonials" class="py-3 text-ink/80 font-semibold">آراء العملاء</a>
+          <a href="#faq" class="py-3 text-ink/80 font-semibold">الأسئلة الشائعة</a>
+          <a href="#pricing" class="btn btn-primary px-6 py-3 mt-2">ابدأ الآن</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================================================================
+           SECTION 1 — HERO
+      ==================================================================== -->
+      <section
+        id="hero"
+        class="bg-pattern relative overflow-hidden pt-32 lg:pt-40 pb-20 lg:pb-28"
+      >
+        <div class="glow w-[620px] h-[620px] -top-40 -right-40"></div>
+        <div class="glow w-[420px] h-[420px] top-1/3 -left-32 opacity-70"></div>
+
+        <div
+          class="layer-content mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-10 items-center"
+        >
+          <!-- Right side: content (first child = right in RTL) -->
+          <div class="max-w-xl">
+            <div class="eyebrow mb-6" data-anim="fade-up">
+              <span class="w-2 h-2 rounded-full bg-primary"></span>
+              تحسين SEO بالذكاء الاصطناعي
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold leading-[1.18] text-ink"
+              data-anim="fade-up"
+            >
+              حسّن ترتيب موقعك على
+              <span class="text-grad">جوجل</span>
+              تلقائياً بالذكاء الاصطناعي
+            </h1>
+
+            <p
+              class="mt-6 text-lg text-[#4a5a4c] leading-relaxed"
+              data-anim="fade-up"
+            >
+              منصة <span class="font-bold text-ink">هويّة</span> تفحص موقعك
+              بالكامل، تكتشف مشاكل تحسين محركات البحث، وتولّد تحسينات جاهزة
+              بالذكاء الاصطناعي — تراجعها وتعتمدها لتُطبَّق مباشرة على موقعك دون
+              الحاجة لخبير SEO.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center gap-4" data-anim="fade-up">
+              <a href="#pricing" class="btn btn-primary px-8 py-4 text-lg cta-pulse"
+                >ابدأ مجاناً</a
+              >
+              <a href="#usecases" class="btn btn-ghost px-7 py-4 text-lg">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="text-primary-600"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                شاهد كيف تعمل
+              </a>
+            </div>
+
+            <!-- Trust row -->
+            <div
+              class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-[#5b6760]"
+              data-anim="fade-up"
+            >
+              <span class="flex items-center gap-2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#759c25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                لا حاجة لخبرة تقنية
+              </span>
+              <span class="flex items-center gap-2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#759c25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                مراقبة مستمرة 24/7
+              </span>
+              <span class="flex items-center gap-2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#759c25" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                تكامل مع منصتك
+              </span>
+            </div>
+
+            <!-- Integration logos as text chips -->
+            <div class="mt-7 flex flex-wrap items-center gap-2.5" data-anim="fade-up">
+              <span class="text-xs font-bold text-[#9aa49a]">يتكامل مع:</span>
+              <span class="px-3 py-1.5 rounded-full bg-white border border-[#ecefe7] text-xs font-bold text-[#4a5a4c]">WordPress</span>
+              <span class="px-3 py-1.5 rounded-full bg-white border border-[#ecefe7] text-xs font-bold text-[#4a5a4c]">Shopify</span>
+              <span class="px-3 py-1.5 rounded-full bg-white border border-[#ecefe7] text-xs font-bold text-[#4a5a4c]">سلة</span>
+              <span class="px-3 py-1.5 rounded-full bg-white border border-[#ecefe7] text-xs font-bold text-[#4a5a4c]">زد</span>
+            </div>
+          </div>
+
+          <!-- Left side: visual dashboard -->
+          <div class="relative" data-anim="zoom">
+            <!-- Soft platform glow behind -->
+            <div class="absolute inset-6 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+
+            <!-- Dashboard card -->
+            <div class="surface relative p-5 sm:p-6">
+              <!-- window dots -->
+              <div class="flex items-center justify-between mb-5">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-[#ff6058]"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                  <span class="w-3 h-3 rounded-full bg-primary"></span>
+                </div>
+                <div class="text-xs font-bold text-[#9aa49a]">لوحة تحكم هويّة</div>
+              </div>
+
+              <div class="grid grid-cols-5 gap-4">
+                <!-- Health score ring -->
+                <div class="col-span-2 rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4 flex flex-col items-center justify-center">
+                  <div class="relative w-[110px] h-[110px]">
+                    <svg viewBox="0 0 120 120" class="w-full h-full -rotate-90">
+                      <circle class="ring-track" cx="60" cy="60" r="50" fill="none" stroke-width="11" />
+                      <circle
+                        id="hero-ring"
+                        class="ring-value"
+                        cx="60" cy="60" r="50" fill="none" stroke-width="11"
+                        stroke-dasharray="314"
+                        stroke-dashoffset="314"
+                        data-offset="38"
+                      />
+                    </svg>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                      <span class="text-2xl font-extrabold text-ink" data-counter data-target="88">0</span>
+                      <span class="text-[10px] font-bold text-[#9aa49a]">صحة SEO</span>
+                    </div>
+                  </div>
+                  <div class="mt-2 text-xs font-bold text-primary-700">ممتاز ↑</div>
+                </div>
+
+                <!-- mini stats -->
+                <div class="col-span-3 grid grid-rows-2 gap-4">
+                  <div class="rounded-2xl bg-white border border-[#ecefe7] p-3.5">
+                    <div class="text-[11px] font-bold text-[#9aa49a] mb-1">صفحات تم فحصها</div>
+                    <div class="text-xl font-extrabold text-ink" data-counter data-target="1284">0</div>
+                    <div class="mt-2 h-1.5 rounded-full bg-[#eef2e6] overflow-hidden">
+                      <div class="h-full w-[82%] bg-primary rounded-full"></div>
+                    </div>
+                  </div>
+                  <div class="rounded-2xl bg-white border border-[#ecefe7] p-3.5">
+                    <div class="text-[11px] font-bold text-[#9aa49a] mb-1">مشاكل تم إصلاحها</div>
+                    <div class="text-xl font-extrabold text-ink" data-counter data-target="342">0</div>
+                    <div class="mt-2 h-1.5 rounded-full bg-[#eef2e6] overflow-hidden">
+                      <div class="h-full w-[64%] bg-primary rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI suggestion row -->
+              <div class="mt-4 rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="w-6 h-6 rounded-lg bg-primary/20 flex items-center justify-center">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#5c7a20"><path d="M12 2l2.4 5.6L20 9l-5.6 2.4L12 17l-2.4-5.6L4 9l5.6-1.4z"/></svg>
+                  </span>
+                  <span class="text-xs font-extrabold text-ink">اقتراح بالذكاء الاصطناعي</span>
+                  <span class="mr-auto text-[10px] font-bold text-primary-700 bg-primary/15 px-2 py-1 rounded-full">جديد</span>
+                </div>
+                <div class="text-[13px] font-semibold text-[#4a5a4c] leading-relaxed">
+                  عنوان مقترح: «متجر هويّة — أفضل المنتجات بأسعار تنافسية | شحن سريع»
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button class="text-[11px] font-bold bg-primary text-[#14210a] px-3 py-1.5 rounded-full">اعتماد</button>
+                  <button class="text-[11px] font-bold bg-white border border-[#ecefe7] text-[#4a5a4c] px-3 py-1.5 rounded-full">تعديل</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating card: top-left -->
+            <div class="floaty float-card absolute -top-6 -left-4 sm:-left-8 p-3.5 hidden sm:block" data-float="1">
+              <div class="flex items-center gap-2.5">
+                <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+                </span>
+                <div>
+                  <div class="text-[10px] font-bold text-[#9aa49a]">زيارات عضوية</div>
+                  <div class="text-sm font-extrabold text-ink">+47%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating card: bottom-right -->
+            <div class="floaty float-card absolute -bottom-6 -right-3 sm:-right-7 p-3.5 hidden sm:block" data-float="2">
+              <div class="flex items-center gap-2.5">
+                <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <div>
+                  <div class="text-[10px] font-bold text-[#9aa49a]">تم تطبيقه تلقائياً</div>
+                  <div class="text-sm font-extrabold text-ink">١٢ تحسيناً اليوم</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TRUSTED BY / INTEGRATIONS — logo marquee (two opposite rows)
+      ==================================================================== -->
+      <section id="trusted" class="bg-pattern relative overflow-hidden py-14 lg:py-16 border-y border-[#f0f3ea]">
+        <div class="layer-content">
+          <p class="text-center text-sm font-bold text-[#9aa49a] mb-9 px-5" data-anim="fade-up">
+            موثوق به ومتكامل مع أبرز منصات المتاجر وأنظمة إدارة المحتوى
+          </p>
+
+          <!-- Row 1 — moves left → right -->
+          <div class="marquee mb-4">
+            <div class="marquee-track marquee-ltr" data-marquee></div>
+          </div>
+
+          <!-- Row 2 — moves right → left -->
+          <div class="marquee">
+            <div class="marquee-track marquee-rtl" data-marquee></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 2 — FEATURE SHOWCASE (4 alternating split blocks)
+      ==================================================================== -->
+      <section id="usecases" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[460px] h-[460px] top-10 -left-40 opacity-60"></div>
+        <div class="glow w-[420px] h-[420px] bottom-1/4 -right-32 opacity-50"></div>
+
+        <div class="layer-content mx-auto max-w-7xl px-5 lg:px-8">
+          <!-- Section intro -->
+          <div class="max-w-2xl mx-auto text-center mb-16 lg:mb-24" data-anim="fade-up">
+            <div class="eyebrow mb-6">استخدامات الأداة</div>
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-extrabold leading-[1.25] text-ink">
+              جولة داخل المنصة — من الفحص إلى النتائج
+            </h2>
+            <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+              أربع قدرات أساسية تعمل معاً لتمنح موقعك حضوراً أقوى في محركات البحث،
+              مع إبقائك دائماً في موضع التحكّم.
+            </p>
+          </div>
+
+          <div id="showcase-flow" class="relative space-y-24 lg:space-y-36">
+            <!-- Flowing connector (decorative, weaves through the blocks) -->
+            <svg
+              id="flow-svg"
+              class="absolute inset-0 w-full h-full pointer-events-none hidden lg:block"
+              style="z-index: 0"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient id="flowGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#bedc6f" />
+                  <stop offset="100%" stop-color="#759c25" />
+                </linearGradient>
+                <filter id="flowGlow" x="-60%" y="-60%" width="220%" height="220%">
+                  <feGaussianBlur stdDeviation="3.2" result="b" />
+                  <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <!-- faint signal trail -->
+              <path id="flow-base" stroke="#a0cd39" stroke-opacity="0.18" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 9" />
+              <!-- glowing progress path (drawn while scrolling) -->
+              <path id="flow-progress" stroke="url(#flowGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#flowGlow)" />
+              <!-- network nodes -->
+              <g id="flow-nodes"></g>
+              <!-- travelling orb -->
+              <g id="flow-orb" style="opacity: 0">
+                <circle r="9" fill="#a0cd39" fill-opacity="0.25" filter="url(#flowGlow)" />
+                <circle r="6" fill="#a0cd39" filter="url(#flowGlow)" />
+                <circle r="2.6" fill="#ffffff" />
+              </g>
+            </svg>
+
+            <!-- ============ BLOCK 01 — Website Crawling (Content Right / Image Left) ============ -->
+            <div class="feature-block relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+              <!-- Content -->
+              <div class="lg:w-1/2" data-anim="slide" data-from="right">
+                <div class="eyebrow mb-5">الميزة 01 — فحص الموقع</div>
+                <h3 class="text-2xl sm:text-3xl lg:text-[2.2rem] font-extrabold leading-[1.3] text-ink">
+                  فحص شامل لموقعك خلال دقائق
+                </h3>
+                <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+                  يقوم النظام بفحص جميع صفحات الموقع واكتشاف المشكلات التقنية ومشكلات
+                  المحتوى وعوامل تحسين محركات البحث بشكل تلقائي.
+                </p>
+                <a href="#pricing" class="group inline-flex items-center gap-2 mt-7 text-primary-700 font-extrabold text-lg border-b-2 border-primary pb-1">
+                  اكتشف كيف يعمل الفحص
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-x-1"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                </a>
+              </div>
+              <!-- Visual -->
+              <div class="lg:w-1/2 w-full relative" data-anim="slide" data-from="left">
+                <div class="absolute inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+                <div class="surface hover-lift relative p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-2">
+                      <span class="w-3 h-3 rounded-full bg-[#ff6058]"></span>
+                      <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
+                      <span class="w-3 h-3 rounded-full bg-primary"></span>
+                    </div>
+                    <span class="text-xs font-bold text-primary-700 bg-primary/15 px-3 py-1.5 rounded-full flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> فحص مباشر</span>
+                  </div>
+
+                  <!-- Crawl progress -->
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-5">
+                    <div class="flex items-center justify-between mb-2.5">
+                      <span class="text-sm font-extrabold text-ink">تقدّم الفحص</span>
+                      <span class="text-sm font-extrabold text-primary-700">76%</span>
+                    </div>
+                    <div class="h-2.5 rounded-full bg-[#eef2e6] overflow-hidden">
+                      <div class="crawl-bar h-full bg-primary rounded-full" style="width: 76%"></div>
+                    </div>
+                    <div class="mt-2 text-xs font-bold text-[#9aa49a]">يفحص الآن: /products/category/shoes</div>
+                  </div>
+
+                  <!-- Stats grid -->
+                  <div class="mt-4 grid grid-cols-3 gap-3">
+                    <div class="rounded-2xl bg-white border border-[#ecefe7] p-4 text-center">
+                      <div class="text-2xl font-extrabold text-ink" data-counter data-target="1284">0</div>
+                      <div class="text-[10px] font-bold text-[#9aa49a] mt-1">صفحات تم فحصها</div>
+                    </div>
+                    <div class="rounded-2xl bg-white border border-[#ecefe7] p-4 text-center">
+                      <div class="text-2xl font-extrabold text-[#b8851c]" data-counter data-target="37">0</div>
+                      <div class="text-[10px] font-bold text-[#9aa49a] mt-1">مشكلات مكتشفة</div>
+                    </div>
+                    <div class="rounded-2xl bg-primary/12 border border-primary/30 p-4 text-center">
+                      <div class="text-2xl font-extrabold text-primary-700" data-counter data-target="88">0</div>
+                      <div class="text-[10px] font-bold text-[#5c7a20] mt-1">صحة SEO</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating analytics card (glass) -->
+                <div class="floaty absolute -top-6 -right-3 sm:-right-7 p-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/60 shadow-[0_24px_48px_-22px_rgba(19,26,20,0.22)] hidden sm:block" data-float="a">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg>
+                    </span>
+                    <div>
+                      <div class="text-[10px] font-bold text-[#9aa49a]">سرعة الفحص</div>
+                      <div class="text-sm font-extrabold text-ink">٢٤٠ صفحة/دقيقة</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ BLOCK 02 — AI SEO Suggestions (Content Left / Image Right) ============ -->
+            <div class="feature-block relative z-10 flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
+              <!-- Content -->
+              <div class="lg:w-1/2" data-anim="slide" data-from="left">
+                <div class="eyebrow mb-5">الميزة 02 — الذكاء الاصطناعي</div>
+                <h3 class="text-2xl sm:text-3xl lg:text-[2.2rem] font-extrabold leading-[1.3] text-ink">
+                  اقتراحات ذكية جاهزة للتطبيق
+                </h3>
+                <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+                  يقوم الذكاء الاصطناعي بإنشاء عناوين ووصف ميتا ومخططات منظمة وأسئلة
+                  شائعة تساعد على تحسين ظهور موقعك في نتائج البحث.
+                </p>
+                <a href="#pricing" class="group inline-flex items-center gap-2 mt-7 text-primary-700 font-extrabold text-lg border-b-2 border-primary pb-1">
+                  شاهد الاقتراحات
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-x-1"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                </a>
+              </div>
+              <!-- Visual -->
+              <div class="lg:w-1/2 w-full relative" data-anim="slide" data-from="right">
+                <div class="absolute inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+                <div class="surface hover-lift relative p-6 sm:p-7">
+                  <div class="flex items-center gap-2 mb-5">
+                    <span class="w-7 h-7 rounded-lg bg-primary/20 flex items-center justify-center">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="#5c7a20"><path d="M12 2l2.4 5.6L20 9l-5.6 2.4L12 17l-2.4-5.6L4 9l5.6-1.4z"/></svg>
+                    </span>
+                    <span class="text-sm font-extrabold text-ink">لوحة اقتراحات الذكاء الاصطناعي</span>
+                  </div>
+
+                  <!-- Meta Title before/after -->
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-[11px] font-extrabold text-[#9aa49a] mb-2">عنوان Meta</div>
+                    <div class="flex items-start gap-2 mb-2">
+                      <span class="text-[10px] font-bold text-[#c0392b] bg-[#fdecea] px-2 py-0.5 rounded-md mt-0.5 shrink-0">قبل</span>
+                      <span class="text-[13px] text-[#9aa49a] line-through">الصفحة الرئيسية</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                      <span class="text-[10px] font-bold text-primary-700 bg-primary/15 px-2 py-0.5 rounded-md mt-0.5 shrink-0">بعد</span>
+                      <span class="text-[13px] font-semibold text-ink">متجر هويّة — أحذية رياضية أصلية بأفضل الأسعار | شحن سريع</span>
+                    </div>
+                  </div>
+
+                  <!-- Meta Description before/after -->
+                  <div class="mt-3 rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-[11px] font-extrabold text-[#9aa49a] mb-2">وصف Meta</div>
+                    <div class="flex items-start gap-2 mb-2">
+                      <span class="text-[10px] font-bold text-[#c0392b] bg-[#fdecea] px-2 py-0.5 rounded-md mt-0.5 shrink-0">قبل</span>
+                      <span class="text-[13px] text-[#9aa49a] line-through">لا يوجد وصف</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                      <span class="text-[10px] font-bold text-primary-700 bg-primary/15 px-2 py-0.5 rounded-md mt-0.5 shrink-0">بعد</span>
+                      <span class="text-[13px] font-semibold text-ink">تسوّق أحدث الأحذية الرياضية الأصلية مع توصيل سريع وضمان الجودة من متجر هويّة.</span>
+                    </div>
+                  </div>
+
+                  <!-- Schema chip -->
+                  <div class="mt-3 flex items-center gap-2 rounded-xl bg-white border border-[#ecefe7] px-4 py-3">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    <span class="text-[13px] font-semibold text-[#4a5a4c]">مخطط منظَّم (Schema) — Product</span>
+                    <span class="mr-auto text-[10px] font-bold text-primary-700 bg-primary/15 px-2 py-1 rounded-full">جاهز</span>
+                  </div>
+                </div>
+
+                <!-- Floating AI card (glass) -->
+                <div class="floaty absolute -bottom-6 -left-3 sm:-left-8 p-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/60 shadow-[0_24px_48px_-22px_rgba(19,26,20,0.22)] hidden sm:block" data-float="b">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#5c7a20"><path d="M12 2l2.4 5.6L20 9l-5.6 2.4L12 17l-2.4-5.6L4 9l5.6-1.4z"/></svg>
+                    </span>
+                    <div>
+                      <div class="text-[10px] font-bold text-[#9aa49a]">تم توليده الآن</div>
+                      <div class="text-sm font-extrabold text-ink">١٥٦ اقتراحاً ذكياً</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ BLOCK 03 — Review Before Applying (Content Right / Image Left) ============ -->
+            <div class="feature-block relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+              <!-- Content -->
+              <div class="lg:w-1/2" data-anim="slide" data-from="right">
+                <div class="eyebrow mb-5">الميزة 03 — التحكّم البشري</div>
+                <h3 class="text-2xl sm:text-3xl lg:text-[2.2rem] font-extrabold leading-[1.3] text-ink">
+                  أنت من يقرر ما يتم تطبيقه
+                </h3>
+                <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+                  راجع جميع التوصيات المقترحة وعدّلها أو وافق عليها قبل تنفيذها على موقعك.
+                </p>
+                <a href="#pricing" class="group inline-flex items-center gap-2 mt-7 text-primary-700 font-extrabold text-lg border-b-2 border-primary pb-1">
+                  اعرف المزيد
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-x-1"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                </a>
+              </div>
+              <!-- Visual -->
+              <div class="lg:w-1/2 w-full relative" data-anim="slide" data-from="left">
+                <div class="absolute inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+                <div class="surface hover-lift relative p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-5">
+                    <span class="text-sm font-extrabold text-ink">مراجعة التغييرات</span>
+                    <span class="text-xs font-bold text-[#b8851c] bg-[#fff6e6] px-3 py-1.5 rounded-full">بانتظار موافقتك</span>
+                  </div>
+
+                  <!-- Change comparison -->
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-[11px] font-extrabold text-[#9aa49a] mb-3">تغيير مقترح على عنوان الصفحة</div>
+                    <div class="rounded-xl bg-[#fdecea] border border-[#f5c6c0] px-3 py-2.5 mb-2">
+                      <span class="text-[13px] text-[#a93226] line-through">منتجاتنا</span>
+                    </div>
+                    <div class="flex justify-center my-1 text-[#9aa49a]">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                    </div>
+                    <div class="rounded-xl bg-primary/12 border border-primary/30 px-3 py-2.5">
+                      <span class="text-[13px] font-semibold text-[#2f4012]">تشكيلة الأحذية الرياضية 2026 | متجر هويّة</span>
+                    </div>
+                  </div>
+
+                  <!-- Action buttons -->
+                  <div class="mt-4 flex items-center gap-2.5">
+                    <button class="flex-1 inline-flex items-center justify-center gap-2 bg-primary text-[#14210a] font-extrabold py-3 rounded-full">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      موافقة وتطبيق
+                    </button>
+                    <button class="inline-flex items-center justify-center gap-2 bg-white border border-[#ecefe7] text-[#4a5a4c] font-bold py-3 px-4 rounded-full">
+                      تعديل
+                    </button>
+                    <button class="inline-flex items-center justify-center w-11 h-11 bg-white border border-[#ecefe7] text-[#c0392b] rounded-full" aria-label="رفض">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Floating human-control card (glass) -->
+                <div class="floaty absolute -top-6 -left-3 sm:-left-8 p-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/60 shadow-[0_24px_48px_-22px_rgba(19,26,20,0.22)] hidden sm:block" data-float="c">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </span>
+                    <div>
+                      <div class="text-[10px] font-bold text-[#9aa49a]">القرار النهائي</div>
+                      <div class="text-sm font-extrabold text-ink">بيدك أنت دائماً</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============ BLOCK 04 — Monitoring & Reports (Content Left / Image Right) ============ -->
+            <div class="feature-block relative z-10 flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-16">
+              <!-- Content -->
+              <div class="lg:w-1/2" data-anim="slide" data-from="left">
+                <div class="eyebrow mb-5">الميزة 04 — المراقبة والتقارير</div>
+                <h3 class="text-2xl sm:text-3xl lg:text-[2.2rem] font-extrabold leading-[1.3] text-ink">
+                  مراقبة مستمرة وتحسين دائم
+                </h3>
+                <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+                  تابع أداء موقعك واكتشف الصفحات المعطلة ومشكلات SEO الجديدة من خلال
+                  تقارير ولوحات تحكم متقدمة.
+                </p>
+                <a href="#stats" class="group inline-flex items-center gap-2 mt-7 text-primary-700 font-extrabold text-lg border-b-2 border-primary pb-1">
+                  استكشف التقارير
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:-translate-x-1"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                </a>
+              </div>
+              <!-- Visual -->
+              <div class="lg:w-1/2 w-full relative" data-anim="slide" data-from="right">
+                <div class="absolute inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+                <div class="surface hover-lift relative p-6 sm:p-7">
+                  <div class="flex items-center justify-between mb-5">
+                    <div>
+                      <div class="text-sm font-extrabold text-ink">لوحة المراقبة</div>
+                      <div class="text-xs text-[#9aa49a]">آخر 6 أشهر</div>
+                    </div>
+                    <span class="text-xs font-bold text-primary-700 bg-primary/15 px-3 py-1.5 rounded-full">+63% أداء</span>
+                  </div>
+
+                  <!-- Trend chart (SVG area + line) -->
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-5">
+                    <div class="text-[11px] font-extrabold text-[#9aa49a] mb-3">تطوّر صحة SEO</div>
+                    <svg viewBox="0 0 320 110" class="w-full h-28" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#a0cd39" stop-opacity="0.35"/>
+                          <stop offset="100%" stop-color="#a0cd39" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,88 L53,74 L106,80 L160,52 L213,44 L266,26 L320,16 L320,110 L0,110 Z" fill="url(#trendFill)"/>
+                      <path class="trend-line" d="M0,88 L53,74 L106,80 L160,52 L213,44 L266,26 L320,16" fill="none" stroke="#a0cd39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="320" cy="16" r="4" fill="#759c25"/>
+                    </svg>
+                  </div>
+
+                  <!-- Monitoring stats -->
+                  <div class="mt-4 grid grid-cols-2 gap-3">
+                    <div class="flex items-center gap-3 rounded-xl bg-white border border-[#ecefe7] px-4 py-3">
+                      <span class="w-9 h-9 rounded-xl bg-[#fdecea] flex items-center justify-center text-[#c0392b] font-extrabold text-xs">404</span>
+                      <div>
+                        <div class="text-base font-extrabold text-ink" data-counter data-target="3">0</div>
+                        <div class="text-[10px] font-bold text-[#9aa49a]">صفحات معطّلة</div>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 rounded-xl bg-white border border-[#ecefe7] px-4 py-3">
+                      <span class="w-9 h-9 rounded-xl bg-primary/15 flex items-center justify-center">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5c7a20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                      </span>
+                      <div>
+                        <div class="text-base font-extrabold text-ink" data-counter data-target="128">0</div>
+                        <div class="text-[10px] font-bold text-[#9aa49a]">مشكلات مُتابَعة</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Floating notification card (glass) -->
+                <div class="floaty absolute -bottom-6 -right-3 sm:-right-8 p-3.5 rounded-2xl bg-white/70 backdrop-blur-md border border-white/60 shadow-[0_24px_48px_-22px_rgba(19,26,20,0.22)] hidden sm:block w-[220px]" data-float="d">
+                  <div class="flex items-start gap-2.5">
+                    <span class="w-9 h-9 rounded-xl bg-[#fff6e6] flex items-center justify-center shrink-0">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b8851c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                    </span>
+                    <div>
+                      <div class="text-[10px] font-bold text-[#9aa49a]">تنبيه جديد</div>
+                      <div class="text-[13px] font-extrabold text-ink leading-snug">رُصدت صفحة 404 جديدة — تحقّق منها</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 4 — ABOUT US
+      ==================================================================== -->
+      <section id="about" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[440px] h-[440px] bottom-0 -right-32 opacity-50"></div>
+
+        <div class="layer-content mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Content -->
+          <div data-anim="fade-up">
+            <div class="eyebrow mb-6">من نحن</div>
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-extrabold leading-[1.25] text-ink">
+              نصنع أدوات ذكية تساعد الأعمال على النمو عبر الإنترنت بثقة
+            </h2>
+            <p class="mt-5 text-lg text-[#4a5a4c] leading-relaxed">
+              في <span class="font-bold text-ink">هويّة</span> نؤمن أن تحسين محركات
+              البحث يجب أن يكون بسيطاً وموثوقاً للجميع. نجمع بين الذكاء الاصطناعي
+              والخبرة لنمنح المتاجر والمواقع العربية أداة تنمو معها.
+            </p>
+            <a href="#testimonials" class="btn btn-ghost px-7 py-4 mt-8 text-lg">
+              اعرف أكثر عن هويتنا
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </a>
+          </div>
+
+          <!-- Visual -->
+          <div class="relative" data-anim="zoom">
+            <div class="absolute inset-8 rounded-[2.5rem] bg-primary/10 blur-3xl"></div>
+            <div class="surface relative p-8 sm:p-10 text-center overflow-hidden">
+              <div class="swirl-watermark inset-0 bg-center" style="opacity:0.06"></div>
+              <div class="relative">
+                <img src="assets/logo.webp" alt="هويّة" class="h-16 w-auto mx-auto" />
+                <p class="mt-6 text-xl font-bold text-ink leading-relaxed">
+                  «نحوّل تعقيد الـ SEO إلى خطوات بسيطة، آمنة، ومؤتمتة.»
+                </p>
+                <div class="mt-8 grid grid-cols-3 gap-4">
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-2xl font-extrabold text-primary-700" data-counter data-target="2018" data-plain>0</div>
+                    <div class="text-[11px] font-bold text-[#9aa49a] mt-1">سنة التأسيس</div>
+                  </div>
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-2xl font-extrabold text-primary-700"><span data-counter data-target="40">0</span>+</div>
+                    <div class="text-[11px] font-bold text-[#9aa49a] mt-1">خبير في الفريق</div>
+                  </div>
+                  <div class="rounded-2xl bg-[#f8faf4] border border-[#ecefe7] p-4">
+                    <div class="text-2xl font-extrabold text-primary-700"><span data-counter data-target="6">0</span></div>
+                    <div class="text-[11px] font-bold text-[#9aa49a] mt-1">دول نخدمها</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 5 — STATISTICS (Bento grid)
+      ==================================================================== -->
+      <section id="stats" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[520px] h-[520px] -bottom-32 -left-20 opacity-55"></div>
+
+        <div class="layer-content mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center mb-14" data-anim="fade-up">
+            <div class="eyebrow mb-6">الأرقام والإحصائيات</div>
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-extrabold leading-[1.25] text-ink">
+              أرقام تتحدّث عن نتائج حقيقية
+            </h2>
+          </div>
+
+          <!-- Bento: unequal card sizes -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 auto-rows-[180px]">
+            <!-- Large card spanning 2 cols + 2 rows -->
+            <div class="hover-lift lg:col-span-2 lg:row-span-2 p-8 flex flex-col justify-between relative overflow-hidden bg-primary rounded-[1.5rem] border border-primary-500/40 shadow-[0_30px_60px_-32px_rgba(160,205,57,0.6)]" data-anim="fade-up">
+              <div class="swirl-watermark inset-0 bg-center" style="opacity:0.12"></div>
+              <div class="relative">
+                <div class="text-sm font-extrabold text-[#274011]/80">مواقع تمت خدمتها</div>
+              </div>
+              <div class="relative">
+                <div class="text-6xl lg:text-7xl font-extrabold text-[#1d3208] leading-none">
+                  <span data-counter data-target="12500">0</span><span>+</span>
+                </div>
+                <p class="mt-4 text-[#274011]/85 font-semibold max-w-xs">
+                  متاجر ومواقع عربية تثق في هويّة لتحسين حضورها على محركات البحث.
+                </p>
+              </div>
+            </div>
+
+            <!-- Wide card -->
+            <div class="hover-lift surface lg:col-span-2 p-7 flex flex-col justify-center" data-anim="fade-up">
+              <div class="text-sm font-extrabold text-[#9aa49a] mb-2">صفحات تم تحليلها</div>
+              <div class="text-4xl lg:text-5xl font-extrabold text-ink leading-none">
+                <span data-counter data-target="8400000">0</span><span class="text-primary-600">+</span>
+              </div>
+              <div class="mt-3 h-2 rounded-full bg-[#eef2e6] overflow-hidden">
+                <div class="h-full w-[78%] bg-primary rounded-full"></div>
+              </div>
+            </div>
+
+            <!-- Small card -->
+            <div class="hover-lift surface p-7 flex flex-col justify-center" data-anim="fade-up">
+              <div class="text-sm font-extrabold text-[#9aa49a] mb-2">تحسينات تم تنفيذها</div>
+              <div class="text-4xl font-extrabold text-ink leading-none">
+                <span data-counter data-target="2300000">0</span><span class="text-primary-600">+</span>
+              </div>
+            </div>
+
+            <!-- Small card -->
+            <div class="hover-lift surface p-7 flex flex-col justify-center" data-anim="fade-up">
+              <div class="text-sm font-extrabold text-[#9aa49a] mb-2">متوسط زيادة الأداء</div>
+              <div class="text-4xl font-extrabold text-primary-700 leading-none">
+                +<span data-counter data-target="63">0</span><span>%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 6 — PRICING
+      ==================================================================== -->
+      <section id="pricing" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[480px] h-[480px] -top-20 -left-24 opacity-55"></div>
+
+        <div class="layer-content mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center" data-anim="fade-up">
+            <div class="eyebrow mb-6">الأسعار</div>
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-extrabold leading-[1.25] text-ink">
+              باقات تناسب حجم أعمالك
+            </h2>
+            <p class="mt-5 text-lg text-[#4a5a4c]">
+              ابدأ مجاناً، وارتقِ متى احتجت. بدون عقود ملزمة.
+            </p>
+
+            <!-- Toggle -->
+            <div class="mt-8 inline-flex items-center gap-4">
+              <span id="lbl-monthly" class="text-base font-extrabold text-ink">شهري</span>
+              <div id="billing-toggle" class="toggle-track" role="switch" aria-checked="false">
+                <span class="toggle-thumb"></span>
+              </div>
+              <span id="lbl-annual" class="text-base font-bold text-[#9aa49a]">
+                سنوي
+                <span class="text-xs font-bold text-primary-700 bg-primary/15 px-2 py-0.5 rounded-full mr-1">وفّر 20%</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Plans -->
+          <div class="mt-14 grid lg:grid-cols-3 gap-6 lg:gap-5 items-center max-w-5xl mx-auto">
+            <!-- Plan 1 -->
+            <div class="hover-lift surface p-8" data-anim="fade-up">
+              <h3 class="text-lg font-extrabold text-ink">المبتدئ</h3>
+              <p class="text-sm text-[#9aa49a] mt-1">لموقع واحد صغير</p>
+              <div class="mt-6 flex items-end gap-1">
+                <span class="text-4xl font-extrabold text-ink">
+                  <span class="price" data-monthly="0" data-annual="0">0</span>
+                </span>
+                <span class="text-[#9aa49a] font-bold mb-1">ر.س / <span class="period">شهرياً</span></span>
+              </div>
+              <a href="#" class="btn btn-ghost w-full py-3.5 mt-6">ابدأ مجاناً</a>
+              <ul class="mt-7 space-y-3.5 text-[15px] text-[#4a5a4c]">
+                <li class="flex items-center gap-3"><span class="check"></span> فحص حتى ١٠٠ صفحة</li>
+                <li class="flex items-center gap-3"><span class="check"></span> تقرير صحة SEO أساسي</li>
+                <li class="flex items-center gap-3"><span class="check"></span> ٢٠ اقتراح بالذكاء الاصطناعي شهرياً</li>
+                <li class="flex items-center gap-3"><span class="check"></span> تكامل واحد</li>
+              </ul>
+            </div>
+
+            <!-- Plan 2 (Featured) -->
+            <div class="relative" data-anim="fade-up">
+              <div class="surface p-8 border-2 border-primary shadow-[0_40px_80px_-30px_rgba(160,205,57,0.55)] bg-white lg:-translate-y-5">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-[#14210a] text-xs font-extrabold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">الأكثر اختياراً</span>
+                <h3 class="text-lg font-extrabold text-primary-700">الاحترافي</h3>
+                <p class="text-sm text-[#9aa49a] mt-1">للمتاجر والمواقع النامية</p>
+                <div class="mt-6 flex items-end gap-1">
+                  <span class="text-5xl font-extrabold text-ink">
+                    <span class="price" data-monthly="199" data-annual="159">199</span>
+                  </span>
+                  <span class="text-[#9aa49a] font-bold mb-1">ر.س / <span class="period">شهرياً</span></span>
+                </div>
+                <a href="#" class="btn btn-primary w-full py-4 mt-6 text-lg cta-pulse">ابدأ الآن</a>
+                <ul class="mt-7 space-y-3.5 text-[15px] text-[#3d4a3f] font-semibold">
+                  <li class="flex items-center gap-3"><span class="check"></span> فحص حتى ٥٠٠٠ صفحة</li>
+                  <li class="flex items-center gap-3"><span class="check"></span> تقارير متقدمة ومراقبة مستمرة</li>
+                  <li class="flex items-center gap-3"><span class="check"></span> اقتراحات ذكاء اصطناعي غير محدودة</li>
+                  <li class="flex items-center gap-3"><span class="check"></span> توليد مخططات وأسئلة شائعة</li>
+                  <li class="flex items-center gap-3"><span class="check"></span> كل التكاملات + كشف 404</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="hover-lift surface p-8" data-anim="fade-up">
+              <h3 class="text-lg font-extrabold text-ink">المؤسسات</h3>
+              <p class="text-sm text-[#9aa49a] mt-1">لعدة مواقع وفرق كبيرة</p>
+              <div class="mt-6 flex items-end gap-1">
+                <span class="text-4xl font-extrabold text-ink">
+                  <span class="price" data-monthly="499" data-annual="399">499</span>
+                </span>
+                <span class="text-[#9aa49a] font-bold mb-1">ر.س / <span class="period">شهرياً</span></span>
+              </div>
+              <a href="#" class="btn btn-ghost w-full py-3.5 mt-6">تواصل مع المبيعات</a>
+              <ul class="mt-7 space-y-3.5 text-[15px] text-[#4a5a4c]">
+                <li class="flex items-center gap-3"><span class="check"></span> صفحات غير محدودة</li>
+                <li class="flex items-center gap-3"><span class="check"></span> مواقع متعددة + صلاحيات فرق</li>
+                <li class="flex items-center gap-3"><span class="check"></span> تقارير تاريخية كاملة</li>
+                <li class="flex items-center gap-3"><span class="check"></span> مدير حساب مخصّص</li>
+                <li class="flex items-center gap-3"><span class="check"></span> دعم أولوية على مدار الساعة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 7 — TESTIMONIALS
+      ==================================================================== -->
+      <section id="testimonials" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[420px] h-[420px] top-10 -right-28 opacity-50"></div>
+
+        <div class="layer-content mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="grid lg:grid-cols-[40%_60%] gap-10 lg:gap-16 items-center">
+            <!-- Left: portrait circle -->
+            <div class="flex justify-center lg:justify-start" data-anim="zoom">
+              <div class="relative">
+                <div class="absolute -inset-4 rounded-full bg-primary/15 blur-2xl"></div>
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-primary overflow-hidden flex items-end justify-center shadow-[0_40px_80px_-30px_rgba(160,205,57,0.6)]">
+                  <!-- Portrait placeholder (shoulders-up SVG silhouette) -->
+                  <svg id="t-portrait" viewBox="0 0 200 200" class="w-[88%] h-[88%]" aria-hidden="true">
+                    <defs>
+                      <clipPath id="pc"><circle cx="100" cy="110" r="100"/></clipPath>
+                    </defs>
+                    <g clip-path="url(#pc)">
+                      <circle cx="100" cy="78" r="42" fill="#ffffff" opacity="0.92"/>
+                      <path d="M28 210 C28 150 60 132 100 132 C140 132 172 150 172 210 Z" fill="#ffffff" opacity="0.92"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: quotes (no card container) -->
+            <div data-anim="fade-up">
+              <svg class="w-16 h-16 text-[#eef2e6]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9.5 6C6.5 7.5 5 10.5 5 14v4h6v-6H8c0-2 .7-3.6 2.5-4.5L9.5 6zm9 0C15.5 7.5 14 10.5 14 14v4h6v-6h-3c0-2 .7-3.6 2.5-4.5L18.5 6z"/>
+              </svg>
+
+              <div id="t-track">
+                <div class="t-slide active">
+                  <p class="text-2xl sm:text-[1.7rem] font-bold text-ink leading-[1.6]">
+                    وفّرت علينا هويّة ساعات من العمل اليدوي. ترتيب متجرنا على
+                    جوجل تحسّن بشكل ملحوظ خلال أسابيع، والاقتراحات دقيقة وجاهزة
+                    للتطبيق مباشرة.
+                  </p>
+                  <div class="mt-7 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center font-extrabold text-primary-700">س</div>
+                    <div>
+                      <div class="font-extrabold text-ink">متجر سُمو</div>
+                      <div class="text-sm text-[#9aa49a]">سارة العتيبي — مديرة التسويق</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t-slide">
+                  <p class="text-2xl sm:text-[1.7rem] font-bold text-ink leading-[1.6]">
+                    أخيراً أداة SEO أفهمها بالعربية وأثق بها. المراجعة قبل
+                    التطبيق ميزة رائعة — نبقى متحكمين بكل تغيير على الموقع.
+                  </p>
+                  <div class="mt-7 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center font-extrabold text-primary-700">ت</div>
+                    <div>
+                      <div class="font-extrabold text-ink">تقنية الرؤية</div>
+                      <div class="text-sm text-[#9aa49a]">خالد المنصور — الرئيس التنفيذي</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t-slide">
+                  <p class="text-2xl sm:text-[1.7rem] font-bold text-ink leading-[1.6]">
+                    المراقبة المستمرة وكشف صفحات 404 أنقذتنا أكثر من مرة. تقاريرنا
+                    أصبحت أوضح، وزياراتنا العضوية في ارتفاع مستمر.
+                  </p>
+                  <div class="mt-7 flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center font-extrabold text-primary-700">ب</div>
+                    <div>
+                      <div class="font-extrabold text-ink">بيت الأناقة</div>
+                      <div class="text-sm text-[#9aa49a]">نورة القحطاني — مديرة المتجر</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <div class="mt-9 flex items-center gap-3">
+                <button id="t-prev" class="t-control" aria-label="السابق">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button id="t-next" class="t-control" aria-label="التالي">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+                <div id="t-dots" class="flex items-center gap-2 mr-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           SECTION 8 — FAQ
+      ==================================================================== -->
+      <section id="faq" class="bg-pattern relative overflow-hidden py-20 lg:py-28">
+        <div class="glow w-[420px] h-[420px] bottom-0 left-1/4 opacity-45"></div>
+
+        <div class="layer-content mx-auto max-w-3xl px-5 lg:px-8">
+          <div class="text-center mb-12" data-anim="fade-up">
+            <div class="eyebrow mb-6">الأسئلة الشائعة</div>
+            <h2 class="text-3xl sm:text-4xl lg:text-[2.7rem] font-extrabold leading-[1.25] text-ink">
+              كل ما تريد معرفته عن هويّة
+            </h2>
+          </div>
+
+          <div class="space-y-4" id="faq-list">
+            <!-- item -->
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">كيف تعمل المنصة بالضبط؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">تضيف موقعك، فتقوم هويّة بفحص جميع الصفحات تلقائياً واكتشاف مشاكل الـ SEO، ثم يولّد الذكاء الاصطناعي تحسينات جاهزة. تراجعها وتعتمد ما يناسبك ليُطبَّق مباشرة على موقعك.</p></div>
+            </div>
+
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">هل أحتاج إلى خبرة تقنية أو في الـ SEO؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">لا. صُمِّمت المنصة لتكون بسيطة للجميع. الذكاء الاصطناعي يقوم بالعمل الثقيل، وكل ما عليك هو مراجعة الاقتراحات والموافقة عليها بنقرة واحدة.</p></div>
+            </div>
+
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">ما المنصات التي تدعمها هويّة؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">ندعم WordPress وShopify وسلة وزد، مع إضافة تكاملات جديدة باستمرار. يمكنك ربط موقعك خلال دقائق وتطبيق التحسينات مباشرة على نظام إدارة المحتوى.</p></div>
+            </div>
+
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">هل بياناتي وموقعي في أمان؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">نعم. نستخدم اتصالات مشفّرة ولا نطبّق أي تغيير دون موافقتك الصريحة. تبقى دائماً المتحكّم الكامل في كل تعديل يتم على موقعك.</p></div>
+            </div>
+
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">كيف تتم المراقبة المستمرة للـ SEO؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">تفحص المنصة موقعك بشكل دوري على مدار الساعة، تكتشف المشاكل الجديدة وصفحات 404 فور ظهورها، وتنبّهك مع اقتراحات للإصلاح وتقارير تاريخية لمتابعة التطور.</p></div>
+            </div>
+
+            <div class="faq-item surface overflow-hidden" data-anim="fade-up">
+              <button class="faq-head w-full flex items-center gap-4 text-right px-6 py-5">
+                <span class="text-lg font-extrabold text-ink flex-1">هل يمكنني تغيير الباقة أو الإلغاء في أي وقت؟</span>
+                <span class="faq-icon w-9 h-9 shrink-0 rounded-full bg-[#f3f6ec] text-primary-700 flex items-center justify-center text-xl font-bold">+</span>
+              </button>
+              <div class="faq-body"><p class="px-6 pb-6 text-[#4a5a4c] leading-relaxed">بالتأكيد. يمكنك الترقية أو التخفيض أو الإلغاء في أي وقت دون عقود ملزمة. تبدأ مجاناً، وتدفع فقط عندما تكون جاهزاً للنمو.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================================
+         FOOTER
+    ==================================================================== -->
+    <footer class="relative overflow-hidden bg-[#0f140f] text-white">
+      <div class="swirl-watermark -left-20 -top-20 w-[520px] h-[520px]" style="opacity:0.04"></div>
+
+      <!-- Top CTA area -->
+      <div class="relative border-b border-white/10">
+        <div class="glow w-[520px] h-[520px] -top-40 left-1/2 -translate-x-1/2 opacity-40"></div>
+        <div class="layer-content mx-auto max-w-4xl px-5 lg:px-8 py-20 text-center" data-anim="fade-up">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.3]">
+            جاهز لترفع موقعك إلى صدارة نتائج البحث؟
+          </h2>
+          <p class="mt-5 text-lg text-white/70">
+            انضم إلى آلاف المتاجر والمواقع العربية التي تنمو مع هويّة. ابدأ مجاناً اليوم.
+          </p>
+          <a href="#pricing" class="btn btn-primary px-10 py-4 mt-9 text-lg cta-pulse">ابدأ الآن</a>
+        </div>
+      </div>
+
+      <!-- Main footer -->
+      <div class="relative layer-content mx-auto max-w-7xl px-5 lg:px-8 py-16">
+        <div class="grid gap-12 lg:grid-cols-12">
+          <!-- Brand + info -->
+          <div class="lg:col-span-4">
+            <img src="assets/logo.webp" alt="هويّة" class="h-10 w-auto bg-white rounded-xl p-1.5" />
+            <p class="mt-5 text-white/65 leading-relaxed max-w-sm">
+              منصة ذكية لتحسين محركات البحث، تساعد المتاجر والمواقع العربية على
+              النمو والوصول لعملائها بثقة وأمان.
+            </p>
+            <!-- Social -->
+            <div class="mt-6 flex items-center gap-3">
+              <a href="#" aria-label="X" class="w-10 h-10 rounded-full bg-white/8 hover:bg-primary hover:text-[#14210a] flex items-center justify-center transition-colors">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/8 hover:bg-primary hover:text-[#14210a] flex items-center justify-center transition-colors">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 17V9.99H6V17h2.34zM7.17 8.96a1.36 1.36 0 100-2.72 1.36 1.36 0 000 2.72zM18 17v-3.84c0-2.05-1.1-3-2.56-3-1.18 0-1.71.65-2 1.11V9.99H11.1V17h2.34v-3.9c0-.94.18-1.85 1.34-1.85 1.14 0 1.16 1.07 1.16 1.91V17H18z"/></svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/8 hover:bg-primary hover:text-[#14210a] flex items-center justify-center transition-colors">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Nav links -->
+          <div class="lg:col-span-2">
+            <h4 class="font-extrabold mb-4">المنصة</h4>
+            <ul class="space-y-3 text-white/65">
+              <li><a href="#usecases" class="hover:text-primary transition-colors">استخدامات الأداة</a></li>
+              <li><a href="#usecases" class="hover:text-primary transition-colors">كيف تعمل</a></li>
+              <li><a href="#stats" class="hover:text-primary transition-colors">الإحصائيات</a></li>
+              <li><a href="#pricing" class="hover:text-primary transition-colors">الأسعار</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="font-extrabold mb-4">الشركة</h4>
+            <ul class="space-y-3 text-white/65">
+              <li><a href="#about" class="hover:text-primary transition-colors">من نحن</a></li>
+              <li><a href="#testimonials" class="hover:text-primary transition-colors">آراء العملاء</a></li>
+              <li><a href="#faq" class="hover:text-primary transition-colors">الأسئلة الشائعة</a></li>
+              <li><a href="#" class="hover:text-primary transition-colors">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- Certification -->
+          <div class="lg:col-span-4">
+            <h4 class="font-extrabold mb-4">موثوقون رسمياً</h4>
+            <div class="rounded-2xl bg-white p-4 inline-block">
+              <img src="assets/ministry-commerce-certification 1.png" alt="موثق لدى وزارة التجارة والاستثمار" class="h-16 w-auto" />
+            </div>
+            <div class="mt-4 space-y-1.5 text-sm text-white/70">
+              <p class="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0cd39" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                علامة تجارية مسجلة برقم 181546
+              </p>
+              <p class="flex items-center gap-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0cd39" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                موثق لدى وزارة التجارة والاستثمار
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/55">
+          <p>© 2026 هويّة. جميع الحقوق محفوظة.</p>
+          <div class="flex items-center gap-6">
+            <a href="#" class="hover:text-primary transition-colors">سياسة الخصوصية</a>
+            <a href="#" class="hover:text-primary transition-colors">الشروط والأحكام</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
