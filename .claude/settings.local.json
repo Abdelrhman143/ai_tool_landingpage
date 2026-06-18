@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(node --check js/main.js)",
-      "Bash(start \"\" \"index.html\")"
+      "Bash(start \"\" \"index.html\")",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }
